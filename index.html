@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eines per l’Aula Marc y Rafa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="actualizaReloj()">
+    <header>
+        <h1>Eines per l’Aula Marc y Rafa</h1>
+        <button class="toggle-button" onclick="toggleDarkMode()">Modo Oscuro</button>
+    </header>
+    
+    <main>
+        <section id="roulette-section">
+            <center><h2>Ruleta de Noms</h2></center>
+            <canvas id="rouletteCanvas" width="550" height="550"></canvas>
+            <center><button id="spinButton">Girar Ruleta</button></center>
+        </section>
+
+        <section id="timer-section">
+            <h2>Rellotge-Temporitzador</h2>
+            <h1 id="horaActual">hh:mm:ss</h1>
+            <input type="time" id="alarmTime">
+            <button id="alarm" onclick="setAlarm()">Establecer Alarma</button>
+        </section>
+    </main>
+
+    <script src="js/roulette.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
